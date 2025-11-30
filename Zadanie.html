@@ -1,0 +1,13 @@
+<button onclick="dodaj()">Dodaj akapit</button>
+
+<script>
+    let nr = 1;
+
+    function dodaj() {
+        const p = document.createElement("p");
+        p.textContent = "Akapit " + nr;
+        document.body.appendChild(p);
+
+        nr = nr + 1;
+    }
+</script>
