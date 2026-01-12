@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Gradienty i efekty CSS</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: #fff;
+            padding: 40px;
+        }
+
+        .radial {
+            background: radial-gradient(circle, #ffcc00, #ff6600);
+            padding: 30px;
+            border-radius: 20px;
+            margin-bottom: 40px;
+        }
+
+        .name {
+            font-size: 48px;
+            text-shadow: 4px 4px 8px rgba(0,0,0,0.6);
+            margin-bottom: 30px;
+        }
+
+        .box {
+            background: #ffffff;
+            color: #000;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+            border-radius: 12px;
+            margin-bottom: 40px;
+        }
+
+        .efekt-1 {
+            font-size: 32px;
+            text-shadow: 2px 2px 0 #ff0000;
+        }
+
+        .efekt-2 {
+            font-size: 32px;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+        }
+
+        .efekt-3 {
+            font-size: 32px;
+            background: linear-gradient(90deg, #00ffcc, #00ccff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="radial">
+        <div class="name">Bartek Putyra</div>
+        <div class="box">To jest div z cieniem</div>
+
+        <div class="efekt-1">Efekt tekstowy 1</div>
+        <div class="efekt-2">Efekt tekstowy 2</div>
+        <div class="efekt-3">Efekt tekstowy 3</div>
+    </div>
+
+</body>
+</html>
