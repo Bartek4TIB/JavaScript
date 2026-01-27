@@ -1,0 +1,8 @@
+<h3>Wyrażenia regularne - szukanie adresów www </h3>
+
+<script>
+tekst=”strona: www.zsgsucha.pl”;
+let wzorzec=/(\bwww\.)|(\bhttps?;\/\/)/S*/;
+var pozycja=tekst.search( wzorzec );
+document .write( tekst.slice(pozycja) );
+</script>
