@@ -1,0 +1,14 @@
+<h2>Suwak zmieniający wartość</h2>
+
+    <input type="range" id="myRange" min="0" max="100" value="50">
+
+    <p>Aktualna wartość: <span id="valueDisplay">50</span></p>
+
+    <script>
+        const range = document.getElementById("myRange");
+        const display = document.getElementById("valueDisplay");
+
+        range.addEventListener("input", () => {
+            display.textContent = range.value;
+        });
+    </script>
